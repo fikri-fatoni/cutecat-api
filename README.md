@@ -1,24 +1,43 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### System dependencies
 
-Things you may want to cover:
+- Ruby version 3.0.1
 
-* Ruby version
+- Rails version 6.1.4
 
-* System dependencies
+- SQLite3
 
-* Configuration
+### Configuration
 
-* Database creation
+```
+bundle install
+```
 
-* Database initialization
+### Database creation
 
-* How to run the test suite
+```
+rake db:create
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Database initialization
 
-* Deployment instructions
+```
+rake db:migrate
+```
 
-* ...
+### How To Run Development
+
+```
+rails server
+```
+
+### How To Run Console
+
+```
+rails console
+```
+
+### Deployment instructions
+
+TBD
