@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Cat, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context 'validation tests' do
+    it 'ensures name presence' do
+      cat = Cat.new(api_id: 'A123', url: 'https://example.com').save
+      expect(cat).to eq(false)
+    end
+  end
 end
